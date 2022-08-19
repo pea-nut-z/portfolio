@@ -130,7 +130,7 @@ function App() {
           <h1>Get In Touch</h1>
           <p>Job oppotunities or anything about code, if you're interested to talk then I am too!</p>
           <a
-            className="contact-button"
+            className="box-button"
             href="mailto:topaulinez20@gmail.com"
             aria-label="Email Me"
             target="_blank"
