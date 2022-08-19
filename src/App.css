@@ -98,9 +98,10 @@ a:visited{
 .about{
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  align-items: center;
   width: 90%;
   padding-top: 150px;
+  margin: auto;
 }
 
 .about-image{
@@ -110,7 +111,7 @@ box-sizing: border-box;
 padding-left: 10%; 
 }
 
-.about-text{
+.about-content{
 overflow-wrap: anywhere;
 }
 
@@ -245,4 +246,10 @@ width: 70%;
   margin: var(--sectionMargin);
   text-align: center;
   width: 50%;
+}
+
+.side-links{
+  position: fixed;
+  top:100px
+
 }

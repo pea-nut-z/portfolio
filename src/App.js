@@ -5,6 +5,7 @@ import * as data from "./data";
 import { VscGithubAlt } from "react-icons/vsc";
 import { MdOpenInNew } from "react-icons/md";
 import { RiVideoLine } from "react-icons/ri";
+import Media from "./components/Media";
 
 function App() {
   return (
@@ -12,11 +13,12 @@ function App() {
       <header className="App-header">
         <Nav />
       </header>
+      <Media />
       <div className="content">
         {/* <div className="filler" /> */}
         <section id="About" className="about">
           <title>About Me</title>
-          <div className="about-text">
+          <div className="about-content">
             <p className="greet">
               <span className="hello">Hello 👋 </span>, welcome to{" "}
               <span className="name">Pauline</span>
@@ -99,7 +101,7 @@ function App() {
                       <ul className="project-stack-list">
                         {proj.stack.map((stack) => {
                           return (
-                            <li key={`${proj.title}-${proj.stack}`} className="project-stack-item">
+                            <li key={`${proj.title}-${stack}`} className="project-stack-item">
                               {stack}
                             </li>
                           );

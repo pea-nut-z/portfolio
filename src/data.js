@@ -48,7 +48,7 @@ export const portfolio = [
   },
 ];
 
-export const renderLoginInfo = (title) => {
+export const renderLoginInfo = () => {
   return (
     <div>
       <p>Email: test1@gmail.com</p>
@@ -59,3 +59,19 @@ export const renderLoginInfo = (title) => {
 
 export const resumeLink =
   "https://drive.google.com/file/d/1Eo6MQRovZFA1PgOPba7kPw3ZGJY0fa68/view?usp=sharing";
+
+export const medias = [
+  {
+    name: "GitHub",
+    link: "https://github.com/pea-nut-z",
+    tag: "AiOutlineLinkedin",
+  },
+  {
+    name: "LinkedIn",
+    link: "https://www.linkedin.com/in/pauline-zhang20/",
+  },
+  {
+    name: "Twitter",
+    link: "https://twitter.com/toPeanutz",
+  },
+];
