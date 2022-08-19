@@ -1,5 +1,5 @@
 import React from "react";
-import { navOptions } from "../const";
+import { navOptions } from "../data";
 
 export default function Nav() {
   return (
@@ -7,8 +7,11 @@ export default function Nav() {
       <ul className="nav-container">
         {navOptions.map((option) => {
           return (
-            <li key={option} className="nav-option">
-              <a href="#">{option}</a>
+            <li
+              key={option}
+              className={`nav-option ${option === "Resume" ? "resume-button" : "nav-option-button"}`}
+            >
+              <a href={`#${option}`}>{option}</a>
             </li>
           );
         })}
