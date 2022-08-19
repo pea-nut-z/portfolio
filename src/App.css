@@ -46,13 +46,11 @@ a:visited{
 .content{
   padding:5% 0 5% 0;
   width: 70%;
-  margin: 60px auto;
-
+  margin: 0 auto;
 }
 
 .nav-container{
   position: fixed;
-  top:0;
   z-index: 2;
   width: 100%;
   height: 60px;
@@ -102,6 +100,7 @@ a:visited{
   flex-direction: row;
   justify-content: center;
   width: 90%;
+  padding-top: 150px;
 }
 
 .about-image{
@@ -128,15 +127,14 @@ overflow-wrap: anywhere;
 }
 
 .headshot{
-  opacity: 0.8;
-  width: 50%;
+opacity: 0.8;
+width: 50%;
 border : black solid 1.5px;
 border-radius: var(--smallRound);
 width: 150px;
 height: 200px;
-min-width: 150px;
-min-height: 200px;
 transform: rotate(5deg);
+align-self: center;
 }
 
 .stack{
@@ -144,6 +142,7 @@ transform: rotate(5deg);
   flex-direction: row;
   width: 80%;
   height: 200px;
+  padding-top: 150px;
   margin: var(--sectionMargin)
 }
 
@@ -184,6 +183,7 @@ transform: rotate(5deg);
 
 .portfolio{
 margin: var(--sectionMargin);
+padding-top: 150px;
 width: 70%;
 }
 

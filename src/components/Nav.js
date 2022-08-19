@@ -1,5 +1,5 @@
 import React from "react";
-import { navOptions } from "../data";
+import { navOptions, resumeLink } from "../data";
 
 export default function Nav() {
   return (
@@ -11,7 +11,9 @@ export default function Nav() {
               key={option}
               className={`nav-option ${option === "Resume" ? "resume-button" : "nav-option-button"}`}
             >
-              <a href={`#${option}`}>{option}</a>
+              <a href={`${option === "Resume" ? resumeLink : `#${option}`}`} target="_blank">
+                {option}
+              </a>
             </li>
           );
         })}

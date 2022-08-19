@@ -13,6 +13,7 @@ function App() {
         <Nav />
       </header>
       <div className="content">
+        {/* <div className="filler" /> */}
         <section id="About" className="about">
           <title>About Me</title>
           <div className="about-text">
@@ -21,11 +22,7 @@ function App() {
               <span className="name">Pauline</span>
               's portfolio.
             </p>
-            <p>
-              I am a resilient and resourceful self-starter looking to break into the tech world. I
-              made a smooth transition from office administration to building my own business as an
-              Esthetician, and I will do that again with tech.
-            </p>
+            <p>{data.aboutMe}</p>
           </div>
           <div className="about-image">
             <img className="headshot" src="headshot.jpg" decoding="async" alt="Headshot" />
