@@ -6,12 +6,17 @@ export default function Nav() {
     <nav>
       <ul className="nav-container">
         {navOptions.map((option) => {
+          const isResume = option === "Resume";
           return (
             <li
               key={option}
-              className={`nav-option ${option === "Resume" ? "resume-button" : "nav-option-button"}`}
+              className={`nav-option ${isResume ? "resume-button" : "nav-option-button"}`}
             >
-              <a href={`${option === "Resume" ? resumeLink : `#${option}`}`} target="_blank">
+              <a
+                className="nav-link"
+                href={`${isResume ? resumeLink : `#${option}`}`}
+                target={`${isResume ? "_blank" : ""}`}
+              >
                 {option}
               </a>
             </li>

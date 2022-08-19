@@ -23,7 +23,7 @@ export default function Media() {
           const { name, link } = media;
           return (
             <li key={name}>
-              <a href={link} aria-label={name} target="_blank">
+              <a className="media-link" href={link} aria-label={name} target="_blank">
                 <title>{name}</title>
                 {renderIcon(name)}
               </a>

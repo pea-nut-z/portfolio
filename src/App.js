@@ -5,6 +5,7 @@ import * as data from "./data";
 import { VscGithubAlt } from "react-icons/vsc";
 import { MdOpenInNew } from "react-icons/md";
 import { RiVideoLine } from "react-icons/ri";
+import { VscDebugBreakpointLogUnverified } from "react-icons/vsc";
 import Media from "./components/Media";
 
 function App() {
@@ -14,8 +15,8 @@ function App() {
         <Nav />
       </header>
       <Media />
+      <p className="side-name">PAULINE ZHANG</p>
       <div className="content">
-        {/* <div className="filler" /> */}
         <section id="About" className="about">
           <title>About Me</title>
           <div className="about-content">
@@ -27,12 +28,20 @@ function App() {
             <p>{data.aboutMe}</p>
           </div>
           <div className="about-image">
+            <img
+              className="tape"
+              src="https://www.freeiconspng.com/uploads/tape-png-0.png"
+              alt="Tape Png Available In Different Size"
+            />
             <img className="headshot" src="headshot.jpg" decoding="async" alt="Headshot" />
           </div>
         </section>
 
         <section id="Stack" className="stack">
           <div className="stack-card stack-current">
+            <img className="star star1" src="/star.png" alt="Star" />
+            <img className="star star2" src="/star.png" alt="Star" />
+            <img className="star star3" src="/star.png" alt="Star" />
             <h1>My Stack</h1>
             <ul className="list-card my-stack-list">
               {data.stack.map((stack) => {
@@ -42,6 +51,7 @@ function App() {
           </div>
 
           <div className="stack-card stack-explore">
+            <img className="astronaut" src="/earth.png" alt="Astronaut" />
             <h2>Exploring</h2>
             <ul className="list-card">
               {data.explore.map((stack) => {
@@ -102,6 +112,7 @@ function App() {
                         {proj.stack.map((stack) => {
                           return (
                             <li key={`${proj.title}-${stack}`} className="project-stack-item">
+                              <VscDebugBreakpointLogUnverified size={14} className="bullet-point" />{" "}
                               {stack}
                             </li>
                           );
