@@ -253,6 +253,11 @@ padding-top: var(--section-top-padding);
 width: 80%;
 }
 
+.hilight{
+  color: var(--pink);
+  font-weight: bold;
+}
+
 .portfolio-top{
   width: 100%;
   background-color: pink;

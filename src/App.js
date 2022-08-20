@@ -91,7 +91,11 @@ function App() {
 
         <section id="Portfolio" className="portfolio">
           <h1>Portfolio</h1>
-          <p>To learn more, please check out the GitHub Readme of each project.</p>
+          <p>
+            Click on the icons in the top right corner of each project to get to its
+            <span className="hilight"> demo, code and app</span>. To learn more, check out its GitHub
+            Readme.
+          </p>
           <ul>
             {data.portfolio.map((proj) => {
               return (
