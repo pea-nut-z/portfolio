@@ -43,7 +43,6 @@ function App() {
       <div className="side-links">
         <Media />
       </div>
-      <p className="corner-name">PAULINE ZHANG</p>
       <div className="content">
         <section id="About" className="about">
           <title>About Me</title>
@@ -171,6 +170,7 @@ function App() {
           </a>
         </section>
       </div>
+      <p className="corner-name">PAULINE ZHANG</p>
     </div>
   );
 }
