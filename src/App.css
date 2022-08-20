@@ -35,7 +35,6 @@ body
   line-height: 1.6;
   text-align: justify;
   overflow-x: hidden;
-  background: rgb(197,247,235);
 background: linear-gradient(0deg, rgba(197,247,235,1) 0%, rgba(255,255,237,1) 100%);
 background-attachment: fixed;
 }
@@ -121,6 +120,10 @@ display: none;
   width: 80%;
   padding-top: var(--section-top-padding);
   margin: var(--section-margin);
+}
+
+.hand{
+  width:30px
 }
 
 .about-image{
@@ -295,6 +298,7 @@ width: 80%;
 
 .project-link-icon{
   margin-left: 10px;
+  color: var(--purple);
 }
 
 .project-link-icon:hover{

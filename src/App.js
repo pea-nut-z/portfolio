@@ -49,7 +49,8 @@ function App() {
           <title>About Me</title>
           <div className="about-content">
             <p className="greet">
-              <span className="hello">Hello 👋</span>, welcome to{" "}
+              <span className="hello">Hello </span>
+              <img className="hand" src="hand.png" alt="Hand Emoji" />, welcome to{" "}
               <span className="name">Pauline</span>
               's portfolio.
             </p>
