@@ -6,24 +6,24 @@ export default function Media() {
   const renderIcon = (name) => {
     switch (name) {
       case "LinkedIn":
-        return <AiOutlineLinkedin size={25} />;
+        return <AiOutlineLinkedin className="media-icon" />;
       case "GitHub":
-        return <AiFillGithub size={25} />;
+        return <AiFillGithub className="media-icon" />;
       case "Twitter":
-        return <AiOutlineTwitter size={25} />;
+        return <AiOutlineTwitter className="media-icon" />;
       default:
         <div />;
     }
   };
 
   return (
-    <div className="side-links">
-      <ul>
+    <div>
+      <ul className="media-link-list">
         {medias.map((media) => {
           const { name, link } = media;
           return (
             <li key={name}>
-              <a className="media-link" href={link} aria-label={name} target="_blank">
+              <a href={link} aria-label={name} target="_blank">
                 <title>{name}</title>
                 {renderIcon(name)}
               </a>

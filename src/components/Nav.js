@@ -4,7 +4,7 @@ import { navOptions, resumeLink } from "../data";
 export default function Nav() {
   return (
     <nav>
-      <ul className="nav-container">
+      <ul className="nav-bar">
         {navOptions.map((option) => {
           const isResume = option === "Resume";
           return (

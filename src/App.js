@@ -1,21 +1,49 @@
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
 import "./App.css";
 import Nav from "./components/Nav";
-import * as data from "./data";
-import { VscGithubAlt } from "react-icons/vsc";
-import { MdOpenInNew } from "react-icons/md";
-import { RiVideoLine } from "react-icons/ri";
-import { VscDebugBreakpointLogUnverified } from "react-icons/vsc";
 import Media from "./components/Media";
+import SideNav from "./components/SideNav";
+import * as data from "./data";
+import { VscGithubAlt, VscDebugBreakpointLogUnverified } from "react-icons/vsc";
+import { MdOpenInNew, MdOutlineVideoLibrary } from "react-icons/md";
+import { IoMdMenu } from "react-icons/io";
 
 function App() {
+  const [sideNav, setSideNav] = useState(false);
+
+  useEffect(() => {
+    const closeSideNav = () => {
+      setSideNav(false);
+    };
+    window.addEventListener("scroll", closeSideNav);
+
+    return () => {
+      window.removeEventListener("scroll", closeSideNav);
+    };
+  }, []);
+
   return (
-    <div className="App">
+    <div
+      className="App"
+      onClick={() => {
+        sideNav && setSideNav(false);
+      }}
+    >
       <header className="App-header">
-        <Nav />
+        <div className="top-nav">
+          <Nav />
+        </div>
+        <div className="menu-bar">
+          <button className="menu-button" type="button" onClick={() => setSideNav(true)}>
+            <IoMdMenu />
+          </button>
+        </div>
+        {sideNav && <SideNav />}
       </header>
-      <Media />
-      <p className="side-name">PAULINE ZHANG</p>
+      <div className="side-links">
+        <Media />
+      </div>
+      <p className="corner-name">PAULINE ZHANG</p>
       <div className="content">
         <section id="About" className="about">
           <title>About Me</title>
@@ -39,9 +67,9 @@ function App() {
 
         <section id="Stack" className="stack">
           <div className="stack-card stack-current">
-            <img className="star star1" src="/star.png" alt="Star" />
-            <img className="star star2" src="/star.png" alt="Star" />
-            <img className="star star3" src="/star.png" alt="Star" />
+            <img className="star star-top" src="/star.png" alt="Star" />
+            <img className="star star-bottom" src="/star.png" alt="Star" />
+            <img className="star star-right" src="/star.png" alt="Star" />
             <h1>My Stack</h1>
             <ul className="list-card my-stack-list">
               {data.stack.map((stack) => {
@@ -62,8 +90,10 @@ function App() {
         </section>
 
         <section id="Portfolio" className="portfolio">
+          {/* <div className="portfolio-top"> */}
           <h1>Portfolio</h1>
           <p>To learn more, please check out the GitHub Readme of each project.</p>
+          {/* </div> */}
           <ul>
             {data.portfolio.map((proj) => {
               return (
@@ -76,31 +106,31 @@ function App() {
 
                         <div className="project-links">
                           <a
-                            className="project-link-icon"
+                            className="project-link"
                             href={proj.demo}
                             aria-label="Demo Link"
                             target="_blank"
                           >
                             <title>Demo Link</title>
-                            <RiVideoLine size={25} />
+                            <MdOutlineVideoLibrary className="project-link-icon" />
                           </a>
                           <a
-                            className="project-link-icon"
+                            className="project-link"
                             href={proj.github}
                             aria-label="Github Link"
                             target="_blank"
                           >
                             <title>Github</title>
-                            <VscGithubAlt size={25} />
+                            <VscGithubAlt className="project-link-icon" />
                           </a>
                           <a
-                            className="project-link-icon"
+                            className="project-link"
                             href={proj.app}
                             aria-label="App Link"
                             target="_blank"
                           >
                             <title>App Link</title>
-                            <MdOpenInNew size={25} />
+                            <MdOpenInNew className="project-link-icon" />
                           </a>
                         </div>
                       </div>
