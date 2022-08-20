@@ -49,7 +49,7 @@ function App() {
           <title>About Me</title>
           <div className="about-content">
             <p className="greet">
-              <span className="hello">Hello 👋 </span>, welcome to{" "}
+              <span className="hello">Hello 👋</span>, welcome to{" "}
               <span className="name">Pauline</span>
               's portfolio.
             </p>
@@ -90,10 +90,8 @@ function App() {
         </section>
 
         <section id="Portfolio" className="portfolio">
-          {/* <div className="portfolio-top"> */}
           <h1>Portfolio</h1>
           <p>To learn more, please check out the GitHub Readme of each project.</p>
-          {/* </div> */}
           <ul>
             {data.portfolio.map((proj) => {
               return (
@@ -142,8 +140,7 @@ function App() {
                         {proj.stack.map((stack) => {
                           return (
                             <li key={`${proj.title}-${stack}`} className="project-stack-item">
-                              <VscDebugBreakpointLogUnverified size={14} className="bullet-point" />{" "}
-                              {stack}
+                              <VscDebugBreakpointLogUnverified className="bullet-point" /> {stack}
                             </li>
                           );
                         })}

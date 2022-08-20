@@ -14,13 +14,13 @@
   --large-font-size:1.6rem;
   --xlarge-font-size:2rem;
   --xxlarge-font-size:3rem;
-
   --gray-border: var(--gray) solid 1px;
   --small-round:5px;
   --section-margin: 0 auto;
   --section-top-padding: 30%;
   --item-margin: 5% auto;
   --image-opacity: 0.9;
+  --small-icon: 15px;
   --medium-icon: 30px;
   --large-icon: 55px;
 }
@@ -54,6 +54,7 @@ h1,
 h2{
   margin:0;
   padding: 0;
+  font-family: Quicksand;
 }
 
 .menu-bar{
@@ -314,6 +315,7 @@ width: 80%;
 
 .bullet-point{
 margin-right: 5px;
+font-size: var(--small-icon)
 }
 
 .contact{
@@ -379,12 +381,12 @@ body{
 }
 
 .greet{
-  font-size: var(--medium-font-size);
+  font-size: var(--xlarge-font-size);
 }
 
 .hello,
 .name{
-  font-size: var(--xlarge-font-size);
+  font-size: var(--xxlarge-font-size);
 }
 
 .stack{
@@ -504,19 +506,4 @@ margin: var(--item-margin);
 .box-button{
   font-size: var(--xlarge-font-size);
 }
-
-/* .corner-name{
-  right:-50px;
-  bottom:-60px;
-} */
- /* .about,
- .stack,
- .portfolio{
-  margin: 0;
-  padding: 0;
- } */
-
-/* .content{
-  width:100%
-} */
 }
