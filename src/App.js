@@ -66,7 +66,7 @@ function App() {
           </div>
         </section>
 
-        {/* <section id="Stack" className="stack">
+        <section id="Stack" className="stack">
           <div className="stack-card stack-current">
             <img className="star star-top" src="/star.png" alt="Star" />
             <img className="star star-bottom" src="/star.png" alt="Star" />
@@ -88,7 +88,7 @@ function App() {
               })}
             </ul>
           </div>
-        </section> */}
+        </section>
 
         <section id="Portfolio" className="portfolio">
           <h1>Portfolio</h1>

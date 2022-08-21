@@ -3,23 +3,29 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Rubik+Puddles&display=swap");
 
 :root{
+  --white:#FFFFFF;
   --green: #c5f7eb;
   --yellow: #FFFFED;
   --purple:#5C1AD9;
   --pink:#FE347E;
   --gray:lightslategray;
   --lightgray:#ECECEC;
+
+  --small-font-size:0.5rem;
   --regular-font-size:1rem;
   --medium-font-size:1.2rem;
   --large-font-size:1.6rem;
   --xlarge-font-size:2rem;
   --xxlarge-font-size:3rem;
+
   --gray-border: var(--gray) solid 1px;
   --small-round:5px;
+
   --section-margin: 0 auto;
   --section-top-padding: 30%;
   --item-margin: 5% auto;
   --image-opacity: 0.9;
+
   --small-icon: 15px;
   --medium-icon: 30px;
   --large-icon: 55px;
@@ -37,6 +43,7 @@ body
   overflow-x: hidden;
 background: linear-gradient(0deg, rgba(197,247,235,1) 0%, rgba(255,255,237,1) 100%);
 background-attachment: fixed;
+box-sizing:border-box
 }
 
 ul{
@@ -77,7 +84,7 @@ display: none;
   align-items: center;
   color: #5C1AD9;
   margin: 0;
-  background-color: white;
+  background-color: var(--white);
   border-bottom: var(--gray-border)
 }
 
@@ -99,7 +106,7 @@ display: none;
 }
 
 .box-button{
-  background-color: white;
+  background-color: var(--white);
   border: #5C1AD9 solid 2px;
   padding: 5px 20px 5px 20px ;
   border-radius: var(--small-round);
@@ -160,7 +167,6 @@ z-index: 1;
 
 .headshot{
 opacity: var(--image-opacity);
-width: 50%;
 border : black solid 1.5px;
 border-radius: var(--small-round);
 width: 150px;
@@ -182,7 +188,7 @@ transform: rotate(15deg);
   border: var(--gray-border);
   border-radius: var(--small-round);
   background-color: var(--lightgray);
-  padding:3%;
+  padding:1rem;
   box-shadow: 0px 2px 50px -10px var(--pink);
 }
 
@@ -207,6 +213,7 @@ transform: rotate(15deg);
 
   .star-top{
     top: -30%;
+    left:10%
   }
 
   .star-bottom{
@@ -221,24 +228,23 @@ transform: rotate(15deg);
 
 .stack-current{
   width:70%;
-  min-width: 349px;
-  min-height: 174px;
+  /* min-height: 174px; */
 }
 
 .stack-explore{
   position: relative;
   width:30%;
-  min-width: 180px;
-  min-height: 174px;
+  /* min-width: 180px; */
+  /* min-height: 174px; */
   top: 40px;
   right: 20px;
 }
 
 .list-card{
-  background-color: white;
+  background-color: var(--white);
   border: var(--gray) solid 0.5px;
   border-radius: var(--small-round);
-  padding: 5%;
+  padding: 1rem;
 }
 
 .my-stack-list{
@@ -282,14 +288,21 @@ padding-top: var(--section-top-padding);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: white;
+  background-color: var(--white);;
   text-align: left;
   border: var(--gray) solid 0.5px;
   border-radius: var(--small-round);
-  padding: 3%; 
-  width: 60%;
+  padding: 3%;
   margin-left: 1%;
+  width: 60%;
+  min-height: 438px;
 }
+/* 
+.project-link:link,
+.project-link:visited{
+  color: var(--purple);
+} */
+
 
 .project-link-icon{
   margin-left: 10px;
@@ -349,14 +362,12 @@ font-size: var(--medium-icon);
  }
 
 .corner-name{
-  /* font-size: var(--medium-font-size); */
-
   position: fixed;
   right: -8rem;
   bottom:-9rem;
   -webkit-transform:rotate(-45deg);
   transform:rotate(-45deg);
-  background-color: white;
+  background-color: var(--white);;
   width: 15rem;
   height: 15rem;
   text-align: center;
@@ -365,6 +376,7 @@ font-size: var(--medium-icon);
   border-top:var(--gray-border);
   opacity:var(--image-opacity)
 }
+
 
 @media  screen and (max-width:481px){
   .top-nav,
@@ -410,6 +422,41 @@ width: 90%;
     width: 100%;
   }
 
+    .stack{
+      flex-direction: column;
+      align-items: flex-end;
+      width: 100%;
+  }
+
+  .stack-current{
+    width: 90%;
+    }
+    
+    .stack-explore{
+    top:-17px;
+    right:15px;
+    width: 50%;
+    }
+
+
+.star-right{
+  top:7%;
+  left:88%;
+}
+
+.star-bottom{
+  bottom:0%;
+  left: 25%
+}
+
+.astronaut{
+  top:5.4rem;
+  right:11rem;
+  width: 7rem;
+  height: 6rem;
+  z-index: 1;
+}
+
   .project-image{
     display: none;
     }
@@ -428,7 +475,7 @@ width: 90%;
       width: 50%;
       border-right:var(--gray) solid 1px ;
       z-index: 3;
-      background-color: white;
+      background-color: var(--white);
     }
     
      .nav-bar{
@@ -454,12 +501,6 @@ width: 90%;
       margin: 10% auto;
     }
 
-    /* .corner-name{
-  font-size: var(--small-font-size);
-  right:-162px;
-  bottom:-162px;
-    } */
-
 }
 
 @media  screen and (min-width:1025px){
@@ -481,5 +522,6 @@ max-width:665px;
 .contact{
 max-width:665px;
   max-height: 1923px;
+
 }
 }
