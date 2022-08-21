@@ -504,24 +504,7 @@ width: 90%;
 }
 
 @media  screen and (min-width:1025px){
-  .about{
-max-width: 665px;
-  max-height: 631px;
-  }
-
-  .stack{
-max-width: 665px;
-  max-height: 431px;
-  }
-
-  .portfolio{
-max-width:665px;
-  max-height: 1923px;
-  }
-
-.contact{
-max-width:665px;
-  max-height: 1923px;
-
+.content{
+  max-width: 850px;
 }
 }
