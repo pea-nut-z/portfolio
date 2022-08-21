@@ -349,17 +349,21 @@ font-size: var(--medium-icon);
  }
 
 .corner-name{
+  /* font-size: var(--medium-font-size); */
+
   position: fixed;
-  right:-162px;
-  bottom:-162px;
+  right: -8rem;
+  bottom:-9rem;
   -webkit-transform:rotate(-45deg);
-  transform:rotate(-47deg);
+  transform:rotate(-45deg);
   background-color: white;
-  width: 300px;
-  height: 300px;
+  width: 15rem;
+  height: 15rem;
   text-align: center;
   z-index: 2;
-  font-size: var(--medium-font-size);
+  font-size: var(--regular-font-size);
+  border-top:var(--gray-border);
+  opacity:var(--image-opacity)
 }
 
 @media  screen and (max-width:481px){
