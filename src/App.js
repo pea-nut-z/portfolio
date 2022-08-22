@@ -199,7 +199,9 @@ function App() {
 
         <section id="Contact" className="contact">
           <h1>Get In Touch</h1>
-          <p>Job oppotunities or anything about code, if you're interested to talk then I am too!</p>
+          <p>
+            Job opportunities or anything about code, if you're interested to talk, then I am too!
+          </p>
           <a
             className="box-button"
             href="mailto:topaulinez20@gmail.com"
