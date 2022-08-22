@@ -10,11 +10,20 @@ import { IoMdMenu } from "react-icons/io";
 
 function App() {
   const [sideNav, setSideNav] = useState(false);
+  const [smallScreen, setSmallScreen] = useState(false);
+  const [showImgMsg, setShowImgMsg] = useState(false);
 
   useEffect(() => {
     const closeSideNav = () => {
       setSideNav(false);
     };
+
+    const { innerWidth } = window;
+    if (innerWidth <= 481) {
+      setSmallScreen(true);
+      setShowImgMsg(true);
+    }
+
     window.addEventListener("scroll", closeSideNav);
 
     return () => {
@@ -97,16 +106,46 @@ function App() {
             <span className="hilight"> demo, code and app</span>. To learn more, check out its GitHub
             Readme.
           </p>
+          {showImgMsg && (
+            <div>
+              <p className="project-image-message">Click to see image</p>
+              <div className="arrow-wrapper">
+                <div className="arrow" />
+              </div>
+            </div>
+          )}
           <ul>
-            {data.portfolio.map((proj) => {
+            {data.portfolio.map((proj, index) => {
               return (
                 <li key={proj.title} className="project">
-                  <img className="project-image" src={proj.image} alt="Application Screenshot" />
-                  <div className="project-content">
+                  <img
+                    onClick={() => {
+                      if (smallScreen) {
+                        if (showImgMsg) setShowImgMsg(false);
+                        const imgs = document.getElementsByClassName("project-image");
+                        const currentImg = imgs[index];
+                        const show = "show-image";
+                        !currentImg.classList.contains(show) && currentImg.classList.add(show);
+                      }
+                    }}
+                    className="project-image"
+                    src={proj.image}
+                    alt="Application Screenshot"
+                  />
+                  <div
+                    onClick={() => {
+                      if (smallScreen) {
+                        const imgs = document.getElementsByClassName("project-image");
+                        const currentImg = imgs[index];
+                        const show = "show-image";
+                        currentImg.classList.contains(show) && currentImg.classList.remove(show);
+                      }
+                    }}
+                    className="project-content"
+                  >
                     <header>
                       <div className="project-top">
                         <h3 className="project-title">{proj.title}</h3>
-
                         <div className="project-links">
                           <a
                             className="project-link"
