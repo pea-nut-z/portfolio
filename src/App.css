@@ -333,6 +333,7 @@ font-size: var(--small-icon)
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
   width: 100%;
   padding-bottom: 15vh;
 }
@@ -544,7 +545,6 @@ width: 90%;
 @media  screen and (min-width:1025px){
   body{
   height: 500vh;
-
   }
   
   .content{
@@ -560,5 +560,4 @@ section{
   padding-top:15%;
   height: 200vh;
 }
-
 }
