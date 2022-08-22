@@ -15,7 +15,7 @@ export const stack = [
   "Puppeteer",
 ];
 
-export const explore = ["Ruby", "Typescript", "Python"];
+export const explore = ["Ruby", "Docker", "Kubernetes"];
 
 export const portfolio = [
   {
