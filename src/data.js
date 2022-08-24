@@ -1,7 +1,7 @@
 export const navOptions = ["About", "Stack", "Portfolio", "Contact", "Resume"];
 
 export const aboutMe =
-  "I am a resilient and resourceful self-starter looking to break into the tech world. I smoothly transitioned from office administration to building my business as an Esthetician, and I will do that again with tech. It has been a great pleasure meeting people in the industry via LinkedIn and Meetups; We motivate each other and code together. It made me realize that not only did I fall in love with programming but also with its culture.";
+  "I am a resilient and resourceful self-starter looking to break into the tech world. I smoothly transitioned from office administration to building my business as an Esthetician, and I will do that again with tech. It has been a great pleasure meeting people in the industry via LinkedIn and Meetup; We motivate each other and code together. It made me realize that not only did I fall in love with programming but also with its culture.";
 
 export const stack = [
   "Javascript",
@@ -15,7 +15,7 @@ export const stack = [
   "Puppeteer",
 ];
 
-export const explore = ["Ruby", "Docker", "Kubernetes"];
+export const explore = ["Ruby", "Phython", "TypeScript"];
 
 export const portfolio = [
   {

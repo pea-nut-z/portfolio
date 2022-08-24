@@ -9,15 +9,10 @@ import { MdOpenInNew, MdOutlineVideoLibrary } from "react-icons/md";
 import { IoMdMenu } from "react-icons/io";
 
 function App() {
-  const [sideNav, setSideNav] = useState(false);
   const [smallScreen, setSmallScreen] = useState(false);
   const [showImgMsg, setShowImgMsg] = useState(false);
 
   useEffect(() => {
-    const closeSideNav = () => {
-      setSideNav(false);
-    };
-
     const { innerWidth } = window;
     if (innerWidth <= 481) {
       setSmallScreen(true);
@@ -31,29 +26,32 @@ function App() {
     };
   }, []);
 
+  const openSideNav = () => {
+    document.getElementById("side-nav").classList.add("active");
+  };
+
+  const closeSideNav = () => {
+    document.getElementById("side-nav").classList.remove("active");
+  };
+
   return (
-    <div
-      className="App"
-      onClick={() => {
-        sideNav && setSideNav(false);
-      }}
-    >
+    <div className="App">
       <header className="App-header">
         <div className="top-nav">
           <Nav />
         </div>
         <div className="menu-bar">
-          <button className="menu-button" type="button" onClick={() => setSideNav(true)}>
+          <button className="menu-button" type="button" onClick={openSideNav}>
             <IoMdMenu />
           </button>
         </div>
-        {sideNav && <SideNav />}
+        {smallScreen && <SideNav />}
       </header>
       <div className="side-links">
         <Media />
       </div>
       <p className="corner-name">PAULINE ZHANG</p>
-      <div className="content">
+      <div className="content" onClick={closeSideNav}>
         <section id="About" className="about">
           <title>About Me</title>
           <div className="about-content">
@@ -152,6 +150,7 @@ function App() {
                             href={proj.demo}
                             aria-label="Demo Link"
                             target="_blank"
+                            rel="noreferrer"
                           >
                             <title>Demo Link</title>
                             <MdOutlineVideoLibrary className="project-link-icon" />
@@ -161,6 +160,7 @@ function App() {
                             href={proj.github}
                             aria-label="Github Link"
                             target="_blank"
+                            rel="noreferrer"
                           >
                             <title>Github</title>
                             <VscGithubAlt className="project-link-icon" />
@@ -170,6 +170,7 @@ function App() {
                             href={proj.app}
                             aria-label="App Link"
                             target="_blank"
+                            rel="noreferrer"
                           >
                             <title>App Link</title>
                             <MdOpenInNew className="project-link-icon" />
@@ -207,6 +208,7 @@ function App() {
             href="mailto:topaulinez20@gmail.com"
             aria-label="Email Me"
             target="_blank"
+            rel="noreferrer"
           >
             Email Me
           </a>
