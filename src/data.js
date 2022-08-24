@@ -1,7 +1,7 @@
 export const navOptions = ["About", "Stack", "Portfolio", "Contact", "Resume"];
 
 export const aboutMe =
-  "I am a resilient and resourceful self-starter looking to break into the tech world. I smoothly transitioned from office administration to building my business as an Esthetician, and I will do that again with tech. It has been a great pleasure meeting people in the industry via LinkedIn and Meetup; We motivate each other and code together. It made me realize that not only did I fall in love with programming but also with its culture.";
+  "My strength is design and I have a passion for software development. I want to bring the two together and become a full-stack developer. I studied fashion design and was a self-employed esthetician; This contributes to my sense of style and helps me build appealing user interfaces. Software development fulfills my desire to challenge myself in complex problem-solving. My resilience and resourcefulness are the reasons why I continue to succeed in building applications. Thank you for stopping by.";
 
 export const stack = [
   "Javascript",
