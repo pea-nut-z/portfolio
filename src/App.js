@@ -14,7 +14,7 @@ function App() {
 
   useEffect(() => {
     const { innerWidth } = window;
-    if (innerWidth <= 481) {
+    if (innerWidth <= 540) {
       setSmallScreen(true);
       setShowImgMsg(true);
     }

@@ -194,8 +194,8 @@ transform: rotate(15deg);
 }
 
 .astronaut{
-  width: 120px;
-  height: 100px;
+  width: 8rem;
+  height: 6rem;
   position: absolute;
   top:-44%;
   right:25%;
@@ -373,8 +373,13 @@ font-size: var(--medium-icon);
   opacity:var(--image-opacity)
 }
 
+@media  screen and (max-width:280px){
+.list-card{
+font-size:0.7rem;
+}
+}
 
-@media  screen and (max-width:481px){
+@media  screen and (max-width:540px){
   .top-nav,
   .side-links{
       display: none;
@@ -444,10 +449,8 @@ font-size: var(--medium-icon);
 }
 
 .astronaut{
-  top:5.4rem;
-  right:11rem;
-  width: 7rem;
-  height: 6rem;
+  top:5.3rem;
+  left:-7rem;
   z-index: 1;
 }
 
@@ -472,6 +475,8 @@ font-size: var(--medium-icon);
 .project-image{
   align-self:flex-start;
   width:70%;
+  max-height: 436px;
+  max-width: 287px ;
   opacity: 0.7;
   position:absolute;
   z-index: 0;
