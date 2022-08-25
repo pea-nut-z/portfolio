@@ -114,16 +114,19 @@ function App() {
           )}
           <ul>
             {data.portfolio.map((proj, index) => {
+              const imgs = document.getElementsByClassName("project-image");
+              const links = document.getElementsByClassName("project-links");
+              const currentImg = imgs[index];
+              const currentLinks = links[index];
+
               return (
                 <li key={proj.title} className="project">
                   <img
                     onClick={() => {
                       if (smallScreen) {
                         if (showImgMsg) setShowImgMsg(false);
-                        const imgs = document.getElementsByClassName("project-image");
-                        const currentImg = imgs[index];
-                        const show = "show-image";
-                        !currentImg.classList.contains(show) && currentImg.classList.add(show);
+                        currentImg.classList.add("show-image");
+                        currentLinks.classList.add("disable-links");
                       }
                     }}
                     className="project-image"
@@ -133,10 +136,9 @@ function App() {
                   <div
                     onClick={() => {
                       if (smallScreen) {
-                        const imgs = document.getElementsByClassName("project-image");
-                        const currentImg = imgs[index];
-                        const show = "show-image";
-                        currentImg.classList.contains(show) && currentImg.classList.remove(show);
+                        if (showImgMsg) setShowImgMsg(false);
+                        currentImg.classList.remove("show-image");
+                        currentLinks.classList.remove("disable-links");
                       }
                     }}
                     className="project-content"

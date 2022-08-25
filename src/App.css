@@ -489,6 +489,10 @@ font-size:0.7rem;
   transition: z-index 0.1s step-start, opacity 0.15s linear;
 }
 
+.disable-links{
+  pointer-events: none;
+}
+
 #side-nav{
   position: fixed;
   top:0;
