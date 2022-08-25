@@ -36,6 +36,7 @@ function App() {
 
   return (
     <div className="App">
+      <div className="background"></div>
       <header className="App-header">
         <div className="top-nav">
           <Nav />
@@ -136,7 +137,6 @@ function App() {
                   <div
                     onClick={() => {
                       if (smallScreen) {
-                        if (showImgMsg) setShowImgMsg(false);
                         currentImg.classList.remove("show-image");
                         currentLinks.classList.remove("disable-links");
                       }
