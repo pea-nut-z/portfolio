@@ -1,7 +1,7 @@
 export const navOptions = ["About", "Stack", "Portfolio", "Contact", "Resume"];
 
 export const aboutMe =
-  "My strength is design, and I have a passion for software development. I want to bring the two together and become a full-stack developer. I studied fashion design and was a self-employed esthetician; This contributes to my sense of style and helps me build appealing user interfaces. Software development fulfills my desire to challenge myself in complex problem-solving. My resilience and resourcefulness are why I continue to succeed in building applications. Thank you for stopping by.";
+  "My strength is design, and I am passionate about software and web development. I want to bring the two together and become a full-stack developer. I studied fashion design and was a self-employed esthetician; This contributes to my sense of style and helps me build appealing user interfaces. Software development fulfills my desire to challenge myself in complex problem-solving. My resilience and resourcefulness are why I continue to succeed in building applications. Thank you for stopping by.";
 
 export const stack = [
   "Javascript",
