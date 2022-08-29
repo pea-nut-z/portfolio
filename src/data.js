@@ -44,7 +44,7 @@ export const portfolio = [
     stack: ["Javascript", "React", "Google API", "Jest"],
     demo: "https://drive.google.com/file/d/1PNma30nUL6MmBqpDdpx2gqUzDv-lTRJ0/view",
     github: "https://github.com/pea-nut-z/PeaType",
-    app: "https://pea-type.herokuapp.com/",
+    app: "https://typing-test-pz.netlify.app",
   },
 ];
 

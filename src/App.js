@@ -17,9 +17,8 @@ function App() {
     if (innerWidth <= 540) {
       setSmallScreen(true);
       setShowImgMsg(true);
+      window.addEventListener("scroll", closeSideNav);
     }
-
-    window.addEventListener("scroll", closeSideNav);
 
     return () => {
       window.removeEventListener("scroll", closeSideNav);
@@ -52,7 +51,7 @@ function App() {
         <Media />
       </div>
       <p className="corner-name">PAULINE ZHANG</p>
-      <div className="content" onClick={closeSideNav}>
+      <div className="content" onClick={() => smallScreen && closeSideNav()}>
         <section id="About" className="about">
           <title>About Me</title>
           <div className="about-content">
