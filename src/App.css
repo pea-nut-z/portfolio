@@ -115,7 +115,7 @@ section{
 
 .box-button{
   background-color: var(--white);
-  border: #5C1AD9 solid 2px;
+  border: var(--purple) solid 2px;
   padding: 5px 20px 5px 20px ;
   border-radius: var(--small-round);
 }
@@ -567,6 +567,15 @@ font-size:0.7rem;
     }
 
     @keyframes arrow {
+      from {
+        transform: translateY(0%) rotate(45deg);
+      }
+      to {
+        transform: translateY(3vh) rotate(45deg);
+      } 
+    }
+
+    @-webkit-keyframes arrow {
       from {
         transform: translateY(0%) rotate(45deg);
       }

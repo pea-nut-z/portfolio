@@ -163,7 +163,7 @@ function App() {
                             target="_blank"
                             rel="noreferrer"
                           >
-                            <title>Github</title>
+                            <title>Github Link</title>
                             <VscGithubAlt className="project-link-icon" />
                           </a>
                           <a
