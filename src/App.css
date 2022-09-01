@@ -596,6 +596,10 @@ section{
   padding-top: 0;
 }
 
+.about-content{
+text-align: justify;
+}
+
 .portfolio{
   padding-top:15%;
   height: auto;
@@ -606,5 +610,3 @@ section{
 }
 }
 
-
-/* 541 */
