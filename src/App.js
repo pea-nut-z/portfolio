@@ -61,7 +61,10 @@ function App() {
               <span className="name">Pauline</span>
               's portfolio.
             </p>
-            <p>{data.aboutMe}</p>
+            <p>{data.aboutMe1}</p>
+            <p>{data.aboutMe2}</p>
+            <p>{data.aboutMe3}</p>
+            <p>{data.aboutMe4}</p>
           </div>
           <div className="about-image">
             <img
