@@ -23,7 +23,7 @@ export const stack = [
   "Puppeteer",
 ];
 
-export const explore = ["Ruby", "Phython", "TypeScript"];
+export const explore = ["Ruby", "Python", "TypeScript"];
 
 export const portfolio = [
   {
