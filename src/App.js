@@ -120,7 +120,7 @@ function App() {
               const imgs = document.getElementsByClassName("project-image");
               const links = document.getElementsByClassName("project-links");
               const currentImg = imgs[index];
-              const currentLinks = links[index];
+              const currentLink = links[index];
 
               return (
                 <li key={proj.title} className="project">
@@ -128,8 +128,13 @@ function App() {
                     onClick={() => {
                       if (smallScreen) {
                         if (showImgMsg) setShowImgMsg(false);
+                        if (currentImg.classList.contains("show-image")) {
+                          window.open(proj.app, "_blank");
+                        }
                         currentImg.classList.add("show-image");
-                        currentLinks.classList.add("disable-links");
+                        currentLink.classList.add("disable-links");
+                      } else {
+                        window.open(proj.app, "_blank");
                       }
                     }}
                     className="project-image"
@@ -140,7 +145,7 @@ function App() {
                     onClick={() => {
                       if (smallScreen) {
                         currentImg.classList.remove("show-image");
-                        currentLinks.classList.remove("disable-links");
+                        currentLink.classList.remove("disable-links");
                       }
                     }}
                     className="project-content"
@@ -203,12 +208,10 @@ function App() {
         </section>
 
         <section id="Contact" className="contact">
-          <h1>Get In Touch</h1>
-          <p>
-            Job opportunities or anything about code, if you're interested to talk, then I am too!
-          </p>
+          <h1>Say Hello!</h1>
+          <p>{data.contactMsg}</p>
           <a
-            className="box-button"
+            className="email-me-button box-button"
             href="mailto:topaulinez20@gmail.com"
             aria-label="Email Me"
             target="_blank"

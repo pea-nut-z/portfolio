@@ -91,3 +91,6 @@ export const medias = [
     link: "https://twitter.com/toPeanutz",
   },
 ];
+
+export const contactMsg =
+  "If you are interested in joining my weekly coding sessions or collaborating, or if you have feedback for me, feel free to reach out.";
