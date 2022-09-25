@@ -44,7 +44,6 @@ export const portfolio = [
     github: "https://github.com/pea-nut-z/connect-four-app-client-server",
     app: "https://peanutz-connect-four.herokuapp.com/",
   },
-
   {
     title: "Typing Test",
     image: "/type-test.jpg",
@@ -53,6 +52,15 @@ export const portfolio = [
     demo: "https://drive.google.com/file/d/1PNma30nUL6MmBqpDdpx2gqUzDv-lTRJ0/view",
     github: "https://github.com/pea-nut-z/PeaType",
     app: "https://typing-test-pz.netlify.app",
+  },
+  {
+    title: "Latest of Mars",
+    image: "/latest-of-mars.jpg",
+    desc: "A web page that fetches and displays data from NASA and Nature News APIs. Latest weather, news and images gathered in one place for easy view. You can also search and favorite images.",
+    stack: ["Javascript", "React", "API Calls", "Jest"],
+    demo: "https://drive.google.com/file/d/1bakGBdZFV69pOnnOL-0CT6SxU0DjF5E4/view?usp=sharing",
+    github: "https://github.com/pea-nut-z/mars-rover",
+    app: "https://latest-of-mars.netlify.app/",
   },
 ];
 
