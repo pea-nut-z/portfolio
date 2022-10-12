@@ -42,7 +42,7 @@ export const portfolio = [
     stack: ["Javascript", "React", "Express", "Socket.io", "Firebase", "BootStrap", "Puppeteer"],
     demo: "https://drive.google.com/file/d/1MkOhLko22vGLN958mTbkm0QLf4dRq65f/view",
     github: "https://github.com/pea-nut-z/connect-four-app-client-server",
-    app: "https://peanutz-connect-four.herokuapp.com/",
+    app: "https://connect-four-pz.netlify.app",
   },
   {
     title: "Typing Test",
