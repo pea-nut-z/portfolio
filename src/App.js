@@ -187,7 +187,6 @@ function App() {
                         </div>
                       </div>
                       <div className="project-description">{proj.desc}</div>
-                      {proj.title === "Connect Four" && data.renderLoginInfo()}
                     </header>
                     <footer>
                       <ul className="project-stack-list">
