@@ -47,7 +47,7 @@ export const portfolio = [
   {
     title: "Typing Test",
     image: "/type-test.jpg",
-    desc: "A website that tests your typing speed and accuracy in 136 languages. It was interesting to find out that some languages do not use spacing or a period or write from right to left. The differences in grammar were crucial for designing when to obtain user input, start a new line and change the layout.",
+    desc: "A website that tests your typing speed and accuracy in 136 languages. It was interesting to find out that some languages do not use spacing or a period or write from left to right. The differences in grammar were crucial for deciding when to obtain user input, start a new line and change the layout.",
     stack: ["Javascript", "React", "Google API", "Jest"],
     demo: "https://drive.google.com/file/d/1PNma30nUL6MmBqpDdpx2gqUzDv-lTRJ0/view",
     github: "https://github.com/pea-nut-z/PeaType",
