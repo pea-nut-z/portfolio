@@ -29,7 +29,7 @@ export const portfolio = [
   {
     title: "Marketplace",
     image: "/marketplace.jpg",
-    desc: "A cross-platform, Android and ioS-compatible application pack with e-commerce functionalities. There are two versions, one uses hard-coded data and maintains state with Redux, and the other is full-stack and in development. To view the full-stack application and easy steps to see it on your mobile device, visit Github readme. You can also view it in the browser for your convenience. Please note that the layout is not meant for web browsers.",
+    desc: "A cross-platform, Android and ioS-compatible application pack with e-commerce functionalities. There are two versions, one uses hard-coded data and maintains state with Redux, and the another is full-stack and in development. To view the full-stack application and easy steps to see it on your mobile device, visit Github readme. You can also view it in the browser for your convenience. Please note that the layout is not intended for web browsers.",
     stack: ["Javascript", "React Native", "MongoDB", "RESTful API", "Postman", "Redux", "Expo"],
     demo: "https://drive.google.com/file/d/13r3OjZL79GkNJdT6bAutL0Z8CqEVVwmH/view",
     github: "https://github.com/pea-nut-z/karrot",
