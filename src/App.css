@@ -308,7 +308,6 @@ cursor: pointer;
   width: 60%;
   min-height: 438px; 
   z-index: 1; 
-
 }
 
 .project-link-icon{
@@ -391,14 +390,6 @@ font-size: var(--medium-icon);
 .list-card{
 font-size:0.7rem;
 }
-
-.project-top{
-  display:flex;
-  flex-direction: column-reverse;
-}
-.project-links{
-  align-self: flex-end;
-}
 }
 
 @media  screen and (max-width:540px){
@@ -458,67 +449,66 @@ font-size:0.7rem;
     width: 90%;
     }
     
-    .stack-explore{
-    top:-17px;
-    right:15px;
-    width: 50%;
-    }
+  .stack-explore{
+  top:-17px;
+  right:15px;
+  width: 50%;
+  }
 
+  .star-right{
+    top:7%;
+    left:88%;
+  }
 
-.star-right{
-  top:7%;
-  left:88%;
-}
+  .star-bottom{
+    bottom:0%;
+    left: 25%
+  }
 
-.star-bottom{
-  bottom:0%;
-  left: 25%
-}
+  .astronaut{
+    top:5.3rem;
+    left:-7rem;
+    z-index: 1;
+  }
 
-.astronaut{
-  top:5.3rem;
-  left:-7rem;
-  z-index: 1;
-}
+  .project:not(:first-child){
+    margin-top:10vh ;
+  }
 
-.project:not(:first-child){
-  margin-top:10vh ;
-}
+  .project{
+    width: 100%;
+    flex-direction: column;
+  }
 
-.project{
-  width: 100%;
-  flex-direction: column;
-}
+  .project-content{
+    margin-top:7vh ;
+    align-self:flex-end;
+    width: 80%;
+    background-color: var(--yellow);
+    border: var(--gray) solid 1.5px;
+    z-index: 1;
+  }
 
-.project-content{
-  margin-top:7vh ;
-  align-self:flex-end;
-  width: 80%;
-  background-color: var(--yellow);
-  border: var(--gray) solid 1.5px;
-  z-index: 1;
-}
+  .project-image{
+    align-self:flex-start;
+    width:70%;
+    max-height: 436px;
+    max-width: 287px ;
+    opacity: 0.7;
+    position:absolute;
+    z-index: 0;
+    transition: z-index 0.1s step-end, opacity 0.15s linear;
+  }
 
-.project-image{
-  align-self:flex-start;
-  width:70%;
-  max-height: 436px;
-  max-width: 287px ;
-  opacity: 0.7;
-  position:absolute;
-  z-index: 0;
-  transition: z-index 0.1s step-end, opacity 0.15s linear;
-}
+  .show-image{
+    z-index: 2;
+    opacity: 1;
+    transition: z-index 0.1s step-start, opacity 0.15s linear;
+  }
 
-.show-image{
-  z-index: 2;
-  opacity: 1;
-  transition: z-index 0.1s step-start, opacity 0.15s linear;
-}
-
-.disable-links{
-  pointer-events: none;
-}
+  .disable-links{
+    pointer-events: none;
+  }
 
 #side-nav{
   position: fixed;
@@ -562,6 +552,16 @@ font-size:0.7rem;
       width: 80%;
       margin: 10% auto;
     }
+
+    
+.project-top{
+  display:flex;
+  flex-direction: column-reverse;
+}
+
+.project-links{
+  align-self: flex-end;
+}
 
  .project-image-message{
   color: var(--purple);
