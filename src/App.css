@@ -286,6 +286,9 @@ transform: rotate(15deg);
 
 .project-image{
   width:40%;
+  height: auto;
+  max-height: 436px;
+    /* max-width: 287px ; */
   opacity: var(--image-opacity);
   border: var(--gray) solid 0.5px;
   border-radius: var(--small-round);
@@ -493,8 +496,8 @@ font-size:0.7rem;
   .project-image{
     align-self:flex-start;
     width:70%;
-    max-height: 436px;
-    max-width: 287px ;
+    height: auto;
+    max-height: none;
     opacity: 0.7;
     position:absolute;
     z-index: 0;
@@ -598,7 +601,7 @@ font-size:0.7rem;
         transform: translateY(3vh) rotate(45deg);
       } 
     }
-  }
+}
 
 @media  screen and (min-width:1025px){
   
@@ -614,6 +617,10 @@ section{
 .portfolio{
   padding-top:15%;
   height: auto;
+}
+
+.project-image{
+  max-height: none;
 }
 
 .contact{

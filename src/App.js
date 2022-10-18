@@ -210,13 +210,13 @@ function App() {
           <h1>Say Hello!</h1>
           <p>{data.contactMsg}</p>
           <a
-            className="email-me-button box-button"
-            href="mailto:topaulinez20@gmail.com"
-            aria-label="Email Me"
+            className="linkedin-me-button box-button"
+            href="https://www.linkedin.com/in/pauline-zhang20/"
+            aria-label="Connect on LinkedIn"
             target="_blank"
             rel="noreferrer"
           >
-            Email Me
+            Connect on LinkedIn
           </a>
         </section>
       </div>
