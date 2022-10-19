@@ -287,7 +287,6 @@ transform: rotate(15deg);
 .project-image{
   width:40%;
   height: 40%;
-  /* max-height: 400px; */
   opacity: var(--image-opacity);
   border: var(--gray) solid 0.5px;
   border-radius: var(--small-round);
