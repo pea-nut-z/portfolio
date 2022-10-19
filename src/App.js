@@ -108,8 +108,8 @@ function App() {
             Readme.
           </p>
           {showImgMsg && (
-            <div>
-              <p className="project-image-message">Click to see image</p>
+            <div className="project-image-message-wrapper">
+              <p>Click to see image</p>
               <div className="arrow-wrapper">
                 <div className="arrow" />
               </div>
